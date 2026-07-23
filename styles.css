@@ -1,27 +1,27 @@
-/* Dove Haven Poultry Farm - Design System & Modern Cover Page Styling */
+/* Dove Haven Poultry Farm - Design System & Modern Cover Page Styling (Lush Green Theme) */
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
 
 :root {
-  /* Brand Palette (Derived from Logo: Vibrant Red, Rich Black, Pristine White, Warm Gold) */
-  --primary-red: #E60000;
-  --primary-red-hover: #CC0000;
-  --primary-red-glow: rgba(230, 0, 0, 0.25);
+  /* Brand Palette (Lush Organic Emerald & Forest Green Theme) */
+  --primary-green: #10B981;
+  --primary-green-hover: #059669;
+  --primary-green-glow: rgba(16, 185, 129, 0.3);
   --accent-gold: #F59E0B;
   --accent-gold-light: #FBBF24;
   
-  --dark-bg: #0B0F17;
-  --dark-card: #131B2A;
-  --dark-card-hover: #1C273B;
+  --dark-bg: #07140E;
+  --dark-card: #0F2218;
+  --dark-card-hover: #163224;
   --dark-border: rgba(255, 255, 255, 0.08);
   
   --text-main: #F8FAFC;
   --text-muted: #94A3B8;
   --text-dark: #0F172A;
   
-  --bg-gradient: radial-gradient(circle at 50% 0%, #1E0A0A 0%, #0B0F17 70%);
-  --red-gradient: linear-gradient(135deg, #E60000 0%, #B30000 100%);
+  --bg-gradient: radial-gradient(circle at 50% 0%, #0C3320 0%, #07140E 75%);
+  --green-gradient: linear-gradient(135deg, #10B981 0%, #047857 100%);
   --gold-gradient: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
-  --glass-bg: rgba(19, 27, 42, 0.65);
+  --glass-bg: rgba(15, 34, 24, 0.75);
   --glass-border: rgba(255, 255, 255, 0.12);
   
   --radius-sm: 8px;
@@ -32,7 +32,7 @@
   --font-heading: 'Outfit', sans-serif;
   --font-body: 'Plus Jakarta Sans', sans-serif;
   
-  --shadow-glow: 0 10px 30px -10px rgba(230, 0, 0, 0.35);
+  --shadow-glow: 0 10px 30px -10px rgba(16, 185, 129, 0.4);
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -80,7 +80,7 @@ a {
 }
 
 .text-highlight {
-  background: linear-gradient(135deg, #FF4D4D 0%, #E60000 50%, #FFA07A 100%);
+  background: linear-gradient(135deg, #34D399 0%, #10B981 50%, #6EE7B7 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -100,10 +100,10 @@ section {
   align-items: center;
   gap: 0.5rem;
   padding: 0.4rem 1rem;
-  background: rgba(230, 0, 0, 0.12);
-  border: 1px solid rgba(230, 0, 0, 0.3);
+  background: rgba(16, 185, 129, 0.12);
+  border: 1px solid rgba(16, 185, 129, 0.3);
   border-radius: var(--radius-full);
-  color: #FF6B6B;
+  color: #34D399;
   font-size: 0.875rem;
   font-weight: 600;
   letter-spacing: 0.05em;
@@ -152,14 +152,14 @@ section {
 }
 
 .btn-primary {
-  background: var(--red-gradient);
+  background: var(--green-gradient);
   color: #FFFFFF;
   box-shadow: var(--shadow-glow);
 }
 
 .btn-primary:hover {
   transform: translateY(-3px);
-  box-shadow: 0 14px 35px -8px rgba(230, 0, 0, 0.5);
+  box-shadow: 0 14px 35px -8px rgba(16, 185, 129, 0.6);
 }
 
 .btn-secondary {
@@ -187,7 +187,7 @@ section {
 }
 
 .navbar.scrolled {
-  background: rgba(11, 15, 23, 0.85);
+  background: rgba(7, 20, 14, 0.88);
   backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--dark-border);
   padding: 0.85rem 0;
@@ -214,11 +214,11 @@ section {
   height: 48px;
   width: auto;
   object-fit: contain;
-  filter: drop-shadow(0 2px 8px rgba(230, 0, 0, 0.3));
+  filter: drop-shadow(0 2px 8px rgba(16, 185, 129, 0.3));
 }
 
 .brand-title span {
-  color: var(--primary-red);
+  color: var(--primary-green);
 }
 
 .nav-menu {
@@ -246,7 +246,7 @@ section {
   left: 0;
   width: 0;
   height: 2px;
-  background: var(--primary-red);
+  background: var(--primary-green);
   transition: var(--transition);
   border-radius: var(--radius-full);
 }
@@ -380,7 +380,7 @@ section {
   transform: translate(-50%, -50%);
   width: 320px;
   height: 320px;
-  background: radial-gradient(circle, rgba(230, 0, 0, 0.35) 0%, rgba(0,0,0,0) 70%);
+  background: radial-gradient(circle, rgba(16, 185, 129, 0.35) 0%, rgba(0,0,0,0) 70%);
   filter: blur(40px);
   z-index: 0;
   pointer-events: none;
@@ -392,7 +392,7 @@ section {
   width: 220px;
   height: 270px;
   margin: 0 auto 1.5rem auto;
-  filter: drop-shadow(0 15px 25px rgba(230, 0, 0, 0.4));
+  filter: drop-shadow(0 15px 25px rgba(16, 185, 129, 0.3));
   animation: float 6s ease-in-out infinite;
 }
 
@@ -445,15 +445,15 @@ section {
 }
 
 .feature-box:hover {
-  border-color: rgba(230, 0, 0, 0.4);
+  border-color: rgba(16, 185, 129, 0.4);
   transform: translateY(-4px);
 }
 
 .feature-icon {
   width: 44px;
   height: 44px;
-  background: rgba(230, 0, 0, 0.15);
-  color: var(--primary-red);
+  background: rgba(16, 185, 129, 0.15);
+  color: var(--primary-green);
   border-radius: var(--radius-sm);
   display: flex;
   align-items: center;
@@ -490,14 +490,14 @@ section {
 }
 
 .product-card:hover {
-  border-color: var(--primary-red);
+  border-color: var(--primary-green);
   transform: translateY(-8px);
-  box-shadow: 0 20px 40px -15px rgba(230, 0, 0, 0.3);
+  box-shadow: 0 20px 40px -15px rgba(16, 185, 129, 0.3);
 }
 
 .product-header {
   padding: 2rem;
-  background: radial-gradient(circle at top right, rgba(230, 0, 0, 0.15), transparent 70%);
+  background: radial-gradient(circle at top right, rgba(16, 185, 129, 0.15), transparent 70%);
   border-bottom: 1px solid var(--dark-border);
   text-align: center;
 }
@@ -550,13 +550,13 @@ section {
 }
 
 .product-list li i {
-  color: var(--primary-red);
+  color: var(--primary-green);
   font-size: 0.8rem;
 }
 
 /* QUALITY & OPERATIONS SECTION */
 .operations-banner {
-  background: linear-gradient(135deg, rgba(19, 27, 42, 0.9) 0%, rgba(30, 10, 10, 0.9) 100%);
+  background: linear-gradient(135deg, rgba(15, 34, 24, 0.9) 0%, rgba(12, 51, 32, 0.9) 100%);
   border: 1px solid var(--glass-border);
   border-radius: var(--radius-lg);
   padding: 3.5rem 2.5rem;
@@ -631,13 +631,13 @@ section {
 .info-icon {
   width: 48px;
   height: 48px;
-  background: rgba(230, 0, 0, 0.12);
-  border: 1px solid rgba(230, 0, 0, 0.25);
+  background: rgba(16, 185, 129, 0.12);
+  border: 1px solid rgba(16, 185, 129, 0.25);
   border-radius: var(--radius-md);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--primary-red);
+  color: var(--primary-green);
   font-size: 1.25rem;
   flex-shrink: 0;
 }
@@ -675,7 +675,7 @@ section {
 .form-control {
   width: 100%;
   padding: 0.85rem 1.25rem;
-  background: rgba(11, 15, 23, 0.6);
+  background: rgba(7, 20, 14, 0.6);
   border: 1px solid var(--dark-border);
   border-radius: var(--radius-md);
   color: #FFFFFF;
@@ -686,8 +686,8 @@ section {
 
 .form-control:focus {
   outline: none;
-  border-color: var(--primary-red);
-  box-shadow: 0 0 0 3px rgba(230, 0, 0, 0.2);
+  border-color: var(--primary-green);
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.25);
 }
 
 textarea.form-control {
@@ -709,7 +709,7 @@ textarea.form-control {
 
 /* FOOTER */
 .footer {
-  background: #07090E;
+  background: #040A07;
   border-top: 1px solid var(--dark-border);
   padding: 4rem 0 2rem 0;
 }
@@ -746,7 +746,7 @@ textarea.form-control {
 }
 
 .social-btn:hover {
-  background: var(--primary-red);
+  background: var(--primary-green);
   transform: translateY(-3px);
 }
 
@@ -769,7 +769,7 @@ textarea.form-control {
 }
 
 .footer-links a:hover {
-  color: var(--primary-red);
+  color: var(--primary-green);
 }
 
 .footer-bottom {
@@ -789,12 +789,12 @@ textarea.form-control {
   position: fixed;
   bottom: 2rem;
   right: 2rem;
-  background: rgba(16, 185, 129, 0.9);
+  background: rgba(16, 185, 129, 0.95);
   color: #FFFFFF;
   padding: 1rem 1.75rem;
   border-radius: var(--radius-md);
   font-weight: 600;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
   display: flex;
   align-items: center;
   gap: 0.75rem;
