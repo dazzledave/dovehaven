@@ -1,8 +1,11 @@
 // Dove Haven Poultry Farm Cover Page Interactive Scripts
 
 document.addEventListener('DOMContentLoaded', () => {
-  // 1. Sticky Navbar on Scroll
+  // 1. Sticky Navbar & Mobile Menu Toggle
   const navbar = document.getElementById('navbar');
+  const mobileToggle = document.getElementById('mobileToggle');
+  const navMenu = document.querySelector('.nav-menu');
+
   window.addEventListener('scroll', () => {
     if (window.scrollY > 40) {
       navbar.classList.add('scrolled');
@@ -10,6 +13,22 @@ document.addEventListener('DOMContentLoaded', () => {
       navbar.classList.remove('scrolled');
     }
   });
+
+  if (mobileToggle && navMenu) {
+    mobileToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('open');
+      const isOpen = navMenu.classList.contains('open');
+      mobileToggle.innerHTML = isOpen ? '<i class="fa-solid fa-xmark"></i>' : '<i class="fa-solid fa-bars"></i>';
+    });
+
+    // Close menu when clicking nav links
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('open');
+        mobileToggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
+      });
+    });
+  }
 
   // 2. Animated Counter Numbers
   const statNumbers = document.querySelectorAll('.stat-number');
