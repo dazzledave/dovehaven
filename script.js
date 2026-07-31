@@ -1,6 +1,20 @@
-// Dove Haven Poultry Farm Cover Page Interactive Scripts
-
 document.addEventListener('DOMContentLoaded', () => {
+  // 0. Theme Toggle (Dark / Light Mode)
+  const themeToggle = document.getElementById('themeToggle');
+  const savedTheme = localStorage.getItem('dovehaven_theme');
+  
+  if (savedTheme === 'dark') {
+    document.body.classList.add('dark-mode');
+  }
+
+  if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      const isDark = document.body.classList.contains('dark-mode');
+      localStorage.setItem('dovehaven_theme', isDark ? 'dark' : 'light');
+    });
+  }
+
   // 1. Sticky Navbar & Mobile Menu Toggle
   const navbar = document.getElementById('navbar');
   const mobileToggle = document.getElementById('mobileToggle');
