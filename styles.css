@@ -150,6 +150,35 @@ body.dark-mode .showcase-tag {
   color: #F8FAFC;
 }
 
+body.dark-mode .btn-secondary {
+  background: #1E293B;
+  color: #F8FAFC;
+  border-color: #334155;
+}
+
+body.dark-mode .btn-secondary:hover {
+  background: #0F172A;
+  border-color: #10B981;
+  color: #10B981;
+}
+
+body.dark-mode .farmer-badge {
+  background: rgba(15, 23, 42, 0.95);
+  border-color: #334155;
+}
+
+body.dark-mode .farmer-badge strong {
+  color: #F8FAFC;
+}
+
+body.dark-mode .farmer-badge span {
+  color: #94A3B8;
+}
+
+body.dark-mode .form-group label {
+  color: #E2E8F0;
+}
+
 body.dark-mode .form-group input,
 body.dark-mode .form-group select,
 body.dark-mode .form-group textarea {
@@ -300,15 +329,16 @@ section {
 }
 
 .btn-secondary {
-  background: #FFFFFF;
+  background: var(--light-card);
   color: var(--text-main);
   border: 1px solid var(--light-border);
   box-shadow: var(--shadow-sm);
 }
 
 .btn-secondary:hover {
-  background: #F8FAFC;
+  background: var(--light-card-hover);
   border-color: var(--primary-green);
+  color: var(--primary-green);
   transform: translateY(-3px);
 }
 
