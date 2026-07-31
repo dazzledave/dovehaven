@@ -38,6 +38,133 @@
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* DARK MODE THEME SYSTEM */
+body.dark-mode {
+  --light-bg: #0F172A;
+  --light-card: #1E293B;
+  --light-card-hover: #162E27;
+  --light-border: #334155;
+  
+  --text-main: #F8FAFC;
+  --text-muted: #CBD5E1;
+  --text-light: #94A3B8;
+  
+  --bg-gradient: linear-gradient(180deg, #06261C 0%, #0F172A 450px, #0B132B 100%);
+  --glass-bg: rgba(15, 23, 42, 0.95);
+  --glass-border: rgba(16, 185, 129, 0.25);
+  
+  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --shadow-card: 0 10px 30px -5px rgba(0, 0, 0, 0.5);
+}
+
+/* Theme Toggle Button Styles */
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #F1F5F9;
+  border: 1px solid var(--light-border);
+  color: var(--text-main);
+  font-size: 1.05rem;
+  cursor: pointer;
+  transition: var(--transition);
+  box-shadow: var(--shadow-sm);
+  outline: none;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.08);
+  border-color: var(--primary-green);
+  color: var(--primary-green);
+  background: #FFFFFF;
+  box-shadow: 0 0 15px rgba(5, 150, 105, 0.25);
+}
+
+.theme-toggle .moon-icon {
+  display: block;
+}
+
+.theme-toggle .sun-icon {
+  display: none;
+  color: #F59E0B;
+}
+
+body.dark-mode .theme-toggle {
+  background: #1E293B;
+  border-color: #334155;
+  color: #F8FAFC;
+}
+
+body.dark-mode .theme-toggle:hover {
+  background: #334155;
+  border-color: #10B981;
+}
+
+body.dark-mode .theme-toggle .moon-icon {
+  display: none;
+}
+
+body.dark-mode .theme-toggle .sun-icon {
+  display: block;
+}
+
+/* Dark mode specific component adjustments */
+body.dark-mode .navbar {
+  background: rgba(15, 23, 42, 0.92);
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .navbar.scrolled {
+  background: rgba(15, 23, 42, 0.96);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+body.dark-mode .nav-menu {
+  background: #0F172A;
+  border-color: #334155;
+}
+
+body.dark-mode .mobile-toggle {
+  background: #1E293B;
+  border-color: #334155;
+  color: #F8FAFC;
+}
+
+body.dark-mode .showcase-card,
+body.dark-mode .product-card,
+body.dark-mode .contact-info-card,
+body.dark-mode .contact-form,
+body.dark-mode .gallery-card,
+body.dark-mode .cert-card,
+body.dark-mode .about-feature-card {
+  background: #1E293B;
+  border-color: #334155;
+}
+
+body.dark-mode .showcase-tag {
+  background: rgba(15, 23, 42, 0.92);
+  border-color: #334155;
+  color: #F8FAFC;
+}
+
+body.dark-mode .form-group input,
+body.dark-mode .form-group select,
+body.dark-mode .form-group textarea {
+  background: #0F172A;
+  border-color: #334155;
+  color: #F8FAFC;
+}
+
+body.dark-mode .form-group input:focus,
+body.dark-mode .form-group select:focus,
+body.dark-mode .form-group textarea:focus {
+  border-color: #10B981;
+  background: #0F172A;
+}
+
 /* Reset & Global Overflow Fixes */
 *, *::before, *::after {
   box-sizing: border-box;
