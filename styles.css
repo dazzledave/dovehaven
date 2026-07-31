@@ -135,44 +135,69 @@ body.dark-mode .mobile-toggle {
 
 body.dark-mode .showcase-card,
 body.dark-mode .product-card,
+body.dark-mode .feature-box,
 body.dark-mode .contact-info-card,
 body.dark-mode .contact-form,
 body.dark-mode .gallery-card,
 body.dark-mode .cert-card,
 body.dark-mode .about-feature-card {
-  background: #1E293B;
-  border-color: #334155;
+  background: #1E293B !important;
+  border-color: #334155 !important;
+  color: #F8FAFC;
 }
 
-body.dark-mode .showcase-tag {
-  background: rgba(15, 23, 42, 0.92);
-  border-color: #334155;
-  color: #F8FAFC;
+body.dark-mode .feature-box h4 {
+  color: #F8FAFC !important;
+}
+
+body.dark-mode .feature-box p {
+  color: #94A3B8 !important;
+}
+
+body.dark-mode .product-header {
+  background: linear-gradient(135deg, #1E293B 0%, #0F172A 100%) !important;
+  border-bottom-color: #334155 !important;
+}
+
+body.dark-mode .product-header .product-title {
+  color: #F8FAFC !important;
+}
+
+body.dark-mode .product-icon-wrap {
+  background: #0F172A !important;
+  border-color: #334155 !important;
+}
+
+body.dark-mode .showcase-tag,
+body.dark-mode .gallery-badge {
+  background: rgba(15, 23, 42, 0.92) !important;
+  border-color: #334155 !important;
+  color: #F8FAFC !important;
 }
 
 body.dark-mode .btn-secondary {
-  background: #1E293B;
-  color: #F8FAFC;
-  border-color: #334155;
+  background: #1E293B !important;
+  color: #F8FAFC !important;
+  border-color: #334155 !important;
 }
 
 body.dark-mode .btn-secondary:hover {
-  background: #0F172A;
-  border-color: #10B981;
-  color: #10B981;
+  background: #0F172A !important;
+  border-color: #10B981 !important;
+  color: #10B981 !important;
 }
 
 body.dark-mode .farmer-badge {
-  background: rgba(15, 23, 42, 0.95);
-  border-color: #334155;
+  background: rgba(15, 23, 42, 0.95) !important;
+  border-color: #334155 !important;
 }
 
 body.dark-mode .farmer-badge strong {
-  color: #F8FAFC;
+  color: #F8FAFC !important;
 }
 
 body.dark-mode .farmer-badge span {
-  color: #94A3B8;
+  color: #94A3B8 !important;
 }
 
 body.dark-mode .form-group label {
@@ -621,7 +646,7 @@ section {
   bottom: 0.5rem;
   left: 0.4rem;
   right: 0.4rem;
-  background: rgba(255, 255, 255, 0.95);
+  background: var(--light-card);
   border: 1px solid var(--light-border);
   backdrop-filter: blur(8px);
   padding: 0.3rem 0.5rem;
@@ -649,8 +674,8 @@ section {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  background: rgba(255, 255, 255, 0.95);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: var(--light-card);
+  border: 1px solid var(--light-border);
   padding: 0.45rem 0.65rem;
   border-radius: var(--radius-md);
   backdrop-filter: blur(12px);
@@ -739,7 +764,7 @@ section {
   position: absolute;
   bottom: 0.6rem;
   left: 0.6rem;
-  background: rgba(255, 255, 255, 0.95);
+  background: var(--light-card);
   border: 1px solid var(--light-border);
   backdrop-filter: blur(8px);
   padding: 0.35rem 0.75rem;
@@ -758,7 +783,7 @@ section {
 }
 
 .feature-box {
-  background: #FFFFFF;
+  background: var(--light-card);
   border: 1px solid var(--light-border);
   padding: 1.25rem;
   border-radius: var(--radius-md);
@@ -804,7 +829,7 @@ section {
 }
 
 .product-card {
-  background: #FFFFFF;
+  background: var(--light-card);
   border: 1px solid var(--light-border);
   border-radius: var(--radius-lg);
   overflow: hidden;
@@ -822,7 +847,7 @@ section {
 
 .product-header {
   padding: 1.75rem;
-  background: linear-gradient(135deg, #ECFDF5 0%, #F0FDF4 100%);
+  background: var(--light-card-hover);
   border-bottom: 1px solid var(--light-border);
   text-align: center;
 }
@@ -831,7 +856,7 @@ section {
   width: 64px;
   height: 64px;
   margin: 0 auto 1rem auto;
-  background: #FFFFFF;
+  background: var(--light-card);
   border: 1px solid var(--light-border);
   border-radius: 50%;
   display: flex;
